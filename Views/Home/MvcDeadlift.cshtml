@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model List<Assignment1.Models.MaleDeadliftStandardKg>
+
+
+<div class="container bg-light rounded my-3">
+    <div class="col-md-10 offset-1 col-sm-12  py-3">
+        <div>
+            <h1 class="text-center">@ViewBag.Message</h1>
+        </div>
+        <div class="row border-bottom border-dark text-center">
+            <div class="col-md mx-1 my-1 standard">BW</div>
+            <div class="col-md mx-1 my-1 standard">Beg.</div>
+            <div class="col-md mx-1 my-1 standard">Nov.</div>
+            <div class="col-md mx-1 my-1 standard">Intermed.</div>
+            <div class="col-md mx-1 my-1 standard">Adv.</div>
+            <div class="col-md mx-1 my-1 standard">Elite</div>
+        </div>
+        @foreach (var item in Model) {
+            <div class="row border-bottom text-center">
+                <div class="col-md mx-1 my-1 standard border-right border-dark">
+                    <h6 class="text-center my-2">@item.Beginner</h6>
+                </div>
+                <div class="col-md mx-1 my-1 border-right standard">
+                    <h6 class="text-center my-2">@item.Beginner</h6>
+                </div>
+                <div class="col-md mx-1 my-1 border-right standard">
+                    <h6 class="text-center my-2">@item.Novice</h6>
+                </div>
+                <div class="col-md mx-1 my-1 border-right standard">
+                    <h6 class="text-center my-2">@item.Intermediate</h6>
+                </div>
+                <div class="col-md mx-1 my-1 border-right standard">
+                    <h6 class="text-center my-2">@item.Advanced</h6>
+                </div>
+                <div class="col-md mx-1 my-1 border-right standard">
+                    <h6 class="text-center my-2">@item.Elite</h6>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+<script>
+    document.getElementById("deadNav").classList.add("active");
+</script>
