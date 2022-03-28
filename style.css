@@ -14,7 +14,7 @@ footer {
 }
 
 header h1 {
-    font-size: 100px;
+    font-size: 8vh;
 }
 
 .animation {
@@ -25,8 +25,8 @@ header h1 {
 }
 
 .paper-plane {
-    height: 150px;
+    height: 10vh;
     position: absolute;
     top: 0%;
-    left: -25%;
+    left: -15vh;
 }

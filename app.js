@@ -1,14 +1,15 @@
 var w = window.innerWidth
+var h = window.innerHeight
 
 const flightPath = {
     curviness: 1.25,
     autoRotate: true,
     values: [
         { x: 0, y: 0 },
-        { x: w * 0.25, y: 300 },
-        { x: w * 0.5, y: 400 },
-        { x: w * 0.7, y: 600 },
-        { x: w * 1.25, y: 700 },
+        { x: w * 0.25, y: h * 0.1 },
+        { x: w * 0.5, y: h * 0.4 },
+        { x: w * 0.7, y: h * 0.6 },
+        { x: w * 1.1, y: h },
     ]
 }
 
