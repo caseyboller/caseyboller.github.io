@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header h1 {
+    font-size: 100px;
+}
+
+.animation {
+    height: 100vh;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.paper-plane {
+    height: 150px;
+    position: absolute;
+    top: 0%;
+    left: -25%;
+}
