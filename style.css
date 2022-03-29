@@ -30,3 +30,19 @@ header h1 {
     top: 0%;
     left: -15vh;
 }
+
+.tbox {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0;
+}
+
+.tbox.visible {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 1;
+}
