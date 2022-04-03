@@ -37,6 +37,10 @@ header h1 {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .tbox.visible {
@@ -44,5 +48,6 @@ header h1 {
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 1;
 }

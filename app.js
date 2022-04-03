@@ -26,7 +26,7 @@ const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
         triggerElement: '.animation',
-        duration: 2000,
+        duration: 5000,
         triggerHook: 0
 
     })
@@ -38,7 +38,7 @@ var revealElements = document.getElementsByClassName("tbox");
 for (var i = 0; i < revealElements.length; i++) {
     new ScrollMagic.Scene({
             triggerElement: '.animation',
-            offset: 600 + 600 * (i * 0.5),
+            offset: 600 + 600 * (i * 2),
             triggerHook: 0.5,
         })
         .setClassToggle(revealElements[i], "visible") // add class toggle
