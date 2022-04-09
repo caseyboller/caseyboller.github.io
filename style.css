@@ -13,7 +13,6 @@
     align-items: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    background-image: url(underwater.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -42,20 +41,22 @@ header h1 {
     position: absolute;
     top: 0%;
     left: -15vh;
+    margin: 20px;
 }
 
 .tbox {
+    opacity: 0;
+}
+
+.tbox.visible {
     position: absolute;
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    opacity: 0;
     background-color: rgba(255, 255, 255, 0.8);
     color: rgb(0, 0, 0);
+    margin: 10px;
     padding: 10px;
-}
-
-.tbox.visible {
     position: absolute;
     justify-content: center;
     align-items: center;
