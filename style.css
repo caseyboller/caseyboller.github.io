@@ -46,9 +46,6 @@ header h1 {
 
 .tbox {
     opacity: 0;
-}
-
-.tbox.visible {
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -60,5 +57,23 @@ header h1 {
     position: absolute;
     justify-content: center;
     align-items: center;
-    opacity: 1;
+}
+
+.shipwreck {
+    opacity: 0;
+    animation: fadeOut 2s;
+}
+
+.visible {
+    opacity: 1 !important;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

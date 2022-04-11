@@ -41,6 +41,14 @@ for (var i = 0; i < revealElements.length; i++) {
             offset: 600 + 600 * (i * 2),
             triggerHook: 0.5,
         })
-        .setClassToggle(revealElements[i], "visible") // add class toggle
+        .setClassToggle(revealElements[i], "visible") // add class toggle\
         .addTo(controller);
 }
+
+new ScrollMagic.Scene({
+        triggerElement: '.animation',
+        offset: 2400,
+        triggerHook: 0.5,
+    })
+    .setClassToggle(document.getElementsByClassName("shipwreck")[0], "visible") // add class toggle
+    .addTo(controller);
