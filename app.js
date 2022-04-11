@@ -47,7 +47,7 @@ for (var i = 0; i < revealElements.length; i++) {
 
 new ScrollMagic.Scene({
         triggerElement: '.animation',
-        offset: 2400,
+        offset: 1200,
         triggerHook: 0.5,
     })
     .setClassToggle(document.getElementsByClassName("shipwreck")[0], "visible") // add class toggle
