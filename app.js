@@ -6,10 +6,10 @@ const flightPath = {
     autoRotate: true,
     values: [
         { x: 0, y: 0 },
-        { x: w * 0.5, y: h * 0.2 },
-        { x: w * 0.25, y: h * 0.4 },
-        { x: w * 0.7, y: h * 0.6 },
-        { x: w * 0.1, y: h },
+        { x: w * 0.3, y: h * 0.2 },
+        { x: w * 0.5, y: h * 0.4 },
+        { x: w * 0.3, y: h * 0.6 },
+        { x: w * 0.5, y: h },
     ]
 }
 
