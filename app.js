@@ -26,7 +26,7 @@ const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
         triggerElement: '.animation',
-        duration: 5000,
+        duration: 3000,
         triggerHook: 0
 
     })
@@ -52,3 +52,22 @@ new ScrollMagic.Scene({
     })
     .setClassToggle(document.getElementsByClassName("shipwreck")[0], "visible") // add class toggle
     .addTo(controller);
+
+var controller2 = new ScrollMagic.Controller({
+    globalSceneOptions: {
+        triggerHook: 'onLeave',
+        duration: "200%"
+    }
+});
+
+// get all slides
+var slides = document.getElementsByClassName("slide");
+
+// create scene for every slide
+for (var i = 0; i < slides.length; i++) {
+    new ScrollMagic.Scene({
+            triggerElement: slides[i],
+        })
+        .setPin(slides[i], { pushFollowers: false })
+        .addTo(controller2);
+}

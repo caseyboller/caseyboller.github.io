@@ -99,6 +99,10 @@ header h1 {
         flex-direction: column;
     }
     .adjust-height {
-        height: 200vh;
+        height: 100vh;
     }
+}
+
+.slide {
+    margin-bottom: 400px;
 }
