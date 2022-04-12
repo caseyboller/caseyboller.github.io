@@ -84,3 +84,21 @@ header h1 {
         opacity: 1;
     }
 }
+
+.flexy {
+    display: flex;
+    flex-direction: row;
+}
+
+.adjust-height {
+    height: 100vh;
+}
+
+@media (max-width: 800px) {
+    .flexy {
+        flex-direction: column;
+    }
+    .adjust-height {
+        height: 200vh;
+    }
+}
