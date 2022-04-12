@@ -101,6 +101,9 @@ header h1 {
     .adjust-height {
         height: 100vh;
     }
+    .little-text {
+        font-size: small;
+    }
 }
 
 .slide {
